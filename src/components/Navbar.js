@@ -29,7 +29,7 @@ function Navbar() {
                             <Link className={`nav-link ${location.pathname === '/about' ? "active" : ""}`} to="/about">About</Link>
                         </li>
                     </ul>
-                    {(location.pathname ==='/home' || location.pathname === '/') && <div id='profileBtn' className='me-2 rounded-3 mb-3-md' style={{width: '91.0625px', padding: '0.5rem', display: 'flex', alignItems: 'center', backgroundColor: '#4a4a4a' }}>
+                    {(location.pathname ==='/home' || location.pathname === '/') && <div id='profileBtn' className='me-2 rounded-3 mb-3-md' style={{padding: '0.5rem', display: 'flex', alignItems: 'center', backgroundColor: '#4a4a4a' }}>
                         <i className="fas fa-user" style={{ color: '#e7e7e7', fontSize: '1.5rem' }}></i><p className='text-white' style={{ margin: '0rem 0rem 0rem 0.5rem' }}>{userData.name}</p>
                     </div>}
                     {localStorage.getItem('authtoken') && <button className='btn btn-primary' onClick={handleLogOut} >Log out</button>}
