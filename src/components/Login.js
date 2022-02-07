@@ -13,9 +13,6 @@ function Login() {
     const { showAlert } = context;
     
     useEffect(() => {
-        if(localStorage.getItem('authtoken')){
-            history.push("/");
-        }
         document.title = 'eNotebook - Login';
         // eslint-disable-next-line
     }, []);
@@ -26,7 +23,7 @@ function Login() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch("https://enotebook-api.herokuapp.com/api/auth/login", {
+        const response = await fetch("https://my-enotebook.herokuapp.com/api/auth/login", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
