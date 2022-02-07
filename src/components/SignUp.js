@@ -27,7 +27,7 @@ function SignUp() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const { name, email, password } = currentCredentials;
-        const response = await fetch("https://enotebook-api.herokuapp.com/api/auth/createuser", {
+        const response = await fetch("https://my-enotebook.herokuapp.com/api/auth/createuser", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
