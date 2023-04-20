@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 function About() {
   useEffect(() => {
     document.title = 'eNotebook - About';
+    // eslint-disable-next-line
   }, []);
 
   return (
