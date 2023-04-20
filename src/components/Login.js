@@ -23,7 +23,7 @@ function Login() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch("https://my-enotebook-backend.netlify.app/api/auth/login", {
+        const response = await fetch("https://enotebook-backend-nk2k.onrender.com/api/auth/login", {
             method: 'POST',
             headers: {
                 'Acess-Control-Allow-Origin': '*',

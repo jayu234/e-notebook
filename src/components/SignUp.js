@@ -27,7 +27,7 @@ function SignUp() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const { name, email, password } = currentCredentials;
-        const response = await fetch("https://my-enotebook-backend.netlify.app/api/auth/createuser", {
+        const response = await fetch("https://enotebook-backend-nk2k.onrender.com/api/auth/createuser", {
             method: 'POST',
             headers: {
                 'Acess-Control-Allow-Origin': '*',

@@ -2,7 +2,7 @@ import NoteContext from "./noteContext";
 import { useState } from "react";
 
 const NoteState = (props) => {
-  const host = 'https://my-enotebook-backend.netlify.app';
+  const host = 'https://enotebook-backend-nk2k.onrender.com';
   const initialState = [];
   const [notes, setNotes] = useState(initialState);
 
