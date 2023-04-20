@@ -11,6 +11,7 @@ const NoteState = (props) => {
     const response = await fetch(`${host}/api/notes/fetchallnotes`, {
       method: 'GET',
       headers: {
+        'Acess-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
         'auth-token': localStorage.getItem('authtoken')
       }
@@ -25,6 +26,7 @@ const NoteState = (props) => {
     const response = await fetch(`${host}/api/notes/createnote`, {
       method: 'POST',
       headers: {
+        'Acess-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
         'auth-token': localStorage.getItem('authtoken')
       },
@@ -55,6 +57,7 @@ const NoteState = (props) => {
     const response = await fetch(`${host}/api/notes/deletenote/${id}`, {
       method: 'DELETE',
       headers: {
+        'Acess-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
         'auth-token': localStorage.getItem('authtoken')
       }
@@ -78,6 +81,7 @@ const NoteState = (props) => {
     const response = await fetch(`${host}/api/notes/updatenote/${id}`, {
       method: 'PUT',
       headers: {
+        'Acess-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
         'auth-token': localStorage.getItem('authtoken')
       },

@@ -26,6 +26,7 @@ function Login() {
         const response = await fetch("https://my-enotebook-backend.netlify.app/api/auth/login", {
             method: 'POST',
             headers: {
+                'Acess-Control-Allow-Origin': '*',
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({ email: credentials.email, password: credentials.password })

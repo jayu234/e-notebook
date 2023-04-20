@@ -7,6 +7,7 @@ const UserState = (props) => {
         const response = await fetch("https://my-enotebook-backend.netlify.app/api/auth/getuser", {
             method: 'POST',
             headers: {
+                'Acess-Control-Allow-Origin': '*',
                 'Content-Type': 'application/json',
                 'auth-token': localStorage.getItem('authtoken')
             }

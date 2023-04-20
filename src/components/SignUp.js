@@ -30,6 +30,7 @@ function SignUp() {
         const response = await fetch("https://my-enotebook-backend.netlify.app/api/auth/createuser", {
             method: 'POST',
             headers: {
+                'Acess-Control-Allow-Origin': '*',
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({ name, email, password })
