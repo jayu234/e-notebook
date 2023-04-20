@@ -16,6 +16,7 @@ function SignUp() {
     const passwordRef = useRef(null);
     useEffect(() => {
         document.title = 'eNotebook - SignUp';
+        // eslint-disable-next-line
     }, []);
 
     const handleOnChange = (e) => {

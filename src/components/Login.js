@@ -14,6 +14,7 @@ function Login() {
     
     useEffect(() => {
         document.title = 'eNotebook - Login';
+        // eslint-disable-next-line
     }, []);
 
     const handleOnChange = (e) => {
