@@ -1,10 +1,12 @@
 import UserContext from './userContext';
 import { useState } from 'react';
 
+const host = process.env.REACT_APP_API_URL;
 const UserState = (props) => {
     const [userData, setUserData] = useState({});
+    console.log('### host ###', host);
     const getUserData = async () => {
-        const response = await fetch("https://enotebook-backend-nk2k.onrender.com/api/auth/getuser", {
+        const response = await fetch(`${host}/api/auth/getuser`, {
             method: 'POST',
             headers: {
                 'Acess-Control-Allow-Origin': '*',
